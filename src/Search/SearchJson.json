@@ -1,0 +1,39 @@
+{
+    "Contacts": [
+        {
+            "Name": "Balasubramaniyan Nagabushanam",
+            "Mobile": "9487270135",
+            "IsDeleted": false
+        },
+        {
+            "Name": "Jeishree Dharuman",
+            "Mobile": "8754588760",
+            "IsDeleted": false
+        },
+        {
+            "Name": "Mohnish Balasubramaniyan",
+            "Mobile": "9003040937",
+            "IsDeleted": false
+        },
+        {
+            "Name": "Nagabushanam Shanmugam",
+            "Mobile": "9600980464",
+            "IsDeleted": false
+        },
+        {
+            "Name": "Nagabushanam Shanmugam",
+            "Mobile": "9600980464",
+            "IsDeleted": true
+        },
+        {
+            "Name": "Nagabushanam Shanmugam",
+            "Mobile": "9600980464",
+            "IsDeleted": true
+        },
+        {
+            "Name": "Nagabushanam Shanmugam",
+            "Mobile": "9600980464",
+            "IsDeleted": false
+        }
+    ]
+}
