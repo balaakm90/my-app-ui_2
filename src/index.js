@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Search } from './Search/Search';
+// import { Search } from '.Pages/Search/Search';
+import { Login } from './Pages/Login/Login';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Search />
+    {/* <Search /> */}
+    <Login/>
   </React.StrictMode>
 );
 

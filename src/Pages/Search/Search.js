@@ -12,18 +12,18 @@ export const Search = (props) => {
     const handleOnChange = () => {
         setSearchVal(document.getElementById('txtbx01').value.trim());
     };
-    const listItem = (inputObj, searchText) => {
+    const highlightSearch = (inputObj, searchText) => {
         searchText = (searchText === undefined || searchText === null) ? '' : searchText;
         return (
             <>  <div className="search-list-item-div">
                 <div className="search-list-item-name">
-                    Name: <Highlighter
+                    <Highlighter
                         highlightClassName="search-highlight"
                         searchWords={[searchText]}
                         autoEscape={true}
                         textToHighlight={inputObj.Name} />
                 </div>
-                <div className="search-list-item-mobile">Mobile: {inputObj.Mobile}</div>
+                <div className="search-list-item-mobile">{inputObj.Mobile}</div>
             </div>
             </>
         );
@@ -32,7 +32,7 @@ export const Search = (props) => {
         if (objList !== null) {
             if (objList.length > 0) {
                 let returnVal = objList.map((x, index) => {
-                    return (<li className="search-list-item" key={index}>{listItem(x, val)}</li>);
+                    return (<li className="search-list-item" key={index}>{highlightSearch(x, val)}</li>);
                 });
                 return returnVal;
             }
@@ -68,7 +68,7 @@ export const Search = (props) => {
             setContactCount(contactList.length)
         }
 
-    }, [searchVal]);
+    }, [values, searchVal]);
     return (
         <>
             <div className="search-outer-div">

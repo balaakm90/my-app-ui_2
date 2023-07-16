@@ -56,13 +56,10 @@
     border-radius: 5px;
 }
 
-.search-list-item {}
+.search-list-item-name::before {
+    content: 'Name:\00a0\00a0\00a0';
+}
 
-.search-list-item-name {}
-
-.search-list-item-mobile {}
-
-/* .btn-hello {
-    margin-left: 20px;
-    height: 55px;
-} */
+.search-list-item-mobile::before {
+    content: 'Mobile:\00a0';
+}
